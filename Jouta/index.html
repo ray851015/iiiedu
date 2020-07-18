@@ -12,7 +12,9 @@
 </head>
 
 <body>
+
     <div class="container-fluid">
+        <!-- navber -->
         <nav class="navbar navbar-expand-lg navbar-light" id="main">
             <a class="navbar-brand" href="#">
                 <img src="images/Jouta.png" alt="" width="80">
@@ -46,6 +48,54 @@
                 </ul>
             </div>
         </nav>
+        <!-- main video -->
+        <div class="container-video">
+            <!-- search bar -->
+            <div class="container">
+                <div class="slogan">
+                    <p class="slogan1 text-shadow">the best friend around you</p>
+                    <h1 class="slogan2 text-shadow">join us right now</h1>
+                </div>
+            </div>
+
+            <div class="container">
+                <div id="search_configurations">
+                    <form>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-sm-12 col-lg-4 mt-2 mr-2">
+                                <input type="text" class="form-control" placeholder="What are you searching for?">
+                            </div>
+                            <div class="col-sm-12 col-lg-2 mt-2 mr-2">
+                                <input class="form-control" type="date" id="date" name="date">
+                            </div>
+                            <div class="col-sm-12 col-lg-2 mt-2 mr-2">
+                                <select class="form-control" id="location" name="location">
+                                    <option>大安區</option>
+                                    <option>信義區</option>
+                                    <option>大同區</option>
+                                    <option>中山區</option>
+                                    <option>松山區</option>
+                                    <option>萬華區</option>
+                                    <option>士林區</option>
+                                    <option>內湖區</option>
+                                    <option>南港區</option>
+                                    <option>文山區</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-2 ml-2">
+                                <button type="submit" class="btn btn-primary">搜尋</button>
+                            </div>
+                        </div> <!-- Closing div tag for row -->
+                    </form>
+                </div> <!-- Closing div tag for flight_configurations -->
+            </div> <!-- Closing div tag for container-fluid -->
+
+
+            <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+                <source src="images/video.mp4" type="video/mp4">
+                <!-- <source src="images/video.webm" type="video/webm"> -->
+            </video>
+        </div>
     </div>
 
 
@@ -53,10 +103,10 @@
 
 
 
-
-        <div class="container-fluid footer">
-            <p class="text-center mt-2 mb-2">Copyright © 2020 Jouta All rights reserved</p>
-        </div>  
+    <!-- footer -->
+    <div class="container-fluid footer">
+        <p class="text-center mt-2 mb-2">Copyright © 2020 Jouta All rights reserved</p>
+    </div>
     <!--    script      -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

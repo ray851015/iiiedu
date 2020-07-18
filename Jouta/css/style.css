@@ -12,16 +12,94 @@ body{
 html{
     font-size: 20px;
     font-weight: 300;
+    overflow: hidden;
+}
+html,body {
+  height: 100%;
 }
 .container-fluid{
     padding: 0;
 }
-.navbar,.footer{
-    background-color: #f3e4c6;
+/*   banner   */
+.navbar{
+    background-color: transparent;
+    z-index: 99;
 }
+a{
+    color: white !important;
+    font-weight: bolder;
+}
+
 .logo{
     background-image: url(../images/Jouta.png);
 }
+/*   main   */
+.container-video {
+    /* position: relative; */
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.01;
+    animation: load 1.5s 0.8s ease-out forwards;
+}
+#video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%; 
+      min-height: 100%; 
+      width: auto; 
+      height: auto; 
+      z-index: -1000; 
+      overflow: hidden;
+      transform: translate(-50%, -50%) scale(1.05); 
+}
+  
+@keyframes load {
+  100% {
+      opacity: 1;
+  }
+}
+.slogan{
+  margin-top: 10%;
+  text-align: left;
+}
+.text-shadow{
+  text-shadow: 2px 2px 2px rgba(0, 0,0, .1);
+}
+.slogan1{
+  line-height: 1.3;
+  font-size: 1.2rem;
+  letter-spacing: .4em;
+  color: #e6eff3;
+}
+.slogan2{
+  font-size: 4.5rem;
+  color: #f3e4e6;
+}
+.slogan1,.slogan2{
+  text-transform: uppercase;
+}
+/*  search bar  */
+#number_people {
+  position: absolute;
+  right: 35%;
+  color: white;
+  margin-top: 15%;
+}
+
+#search_configurations {
+  margin-top: 10%;
+}
+
+input[type="date"]::before{
+    color: #999;
+    content: attr(placeholder) "         "; 
+}
+input[type="date"]:focus::before {
+    content: "" !important;
+  color: #999;
+}
+/*   stiky navbar   */
 .fixedMenu #main{
     position: fixed;
     top: 0;
@@ -31,4 +109,7 @@ html{
 .footer{
     bottom: 0;
     position: fixed;
+    font-size: 16px;
+    background-color: #8f4f06;
+    color: white;
 }
